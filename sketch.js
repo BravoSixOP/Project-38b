@@ -1,10 +1,8 @@
-var cameraImage;
 var sprite;
 var food;
 var obstacle;
 
 function preload(){
-  cameraImage = loadImage("images/cameraTest.jpg");
 }
 
 function setup(){
@@ -20,8 +18,6 @@ function draw(){
   stroke("white");
   textSize(20);
   text("Green are food  "+ "  |  "+"  Red are obstacles", sprite.x +390, sprite.y-200)
-
-  //image(cameraImage, -width/4.3 + 120, 0, 1200*5.5, 600);
 
   camera.position.x = sprite.x+500;
 
